@@ -26,7 +26,7 @@ console.log(studentList);
 function displayStudent(){
   // console.log(studentList.at(-1).name)
   for(student of studentList){
-  document.querySelector("#scrn").innerHTML += "<ul>";
+  document.querySelector("#scrn").innerHTML += "<ul>";// I forgot to +=  here, and it output only the last student because of that.(why? because every loop it deleted the last HTML)
     document.querySelector("#scrn").innerHTML += '<li> Name:'+student.name+'</li>'
     document.querySelector("#scrn").innerHTML += '<li> Prof:'+student.proffetion+'</li>'
     document.querySelector("#scrn").innerHTML += '<li> Age:'+student.age+'</li>'
