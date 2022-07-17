@@ -5,32 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <div>
+<div class="container col-5 mt-3">
+    <div class="form-group">
     <label for="name">your name</label>
-    <input type="text" class="name" id="student-name">
+    <input type="text" class="name form-control" id="student-name">
     
     <label for="prof">prof</label>
-    <input type="text" class="prof" id="student-prof">
+    <input type="text" class="prof form-control" id="student-prof">
     
     <label for="age">your age</label>
-    <input type="number" class="age" id="student-age">
+    <input type="number" class="age col-3 m-2" id="student-age">
 </div>
-<div>
+<div class="form-group">
     <label for="car">Your car:</label>
-    <input type="text" class="car" id="student-car-type">
+    <input type="text" class="car form-control" id="student-car-type">
     <label for="car">Car color:</label>
-    <input type="color" class="car" id="student-car-color">
+    <input type="color" class="car form-control-color d-block" id="student-car-color">
     <label for="car">Car year:</label>
-    <input type="text" class="car" id="student-car-year">
-    <button onclick="studentName()">submit</button>
+    <input type="text" class="car form-control" id="student-car-year">
+    <button class="btn btn-success m-2" onclick="studentName()">submit</button>
+    <button class="btn btn-primary m-2" onclick="displayStudent()">To print</button>
 
+</div>
 </div>
 
 
-
-<button class="" onclick="displayStudent()">To print</button>
 <div>
     
     <div class="container" id="scrn">
